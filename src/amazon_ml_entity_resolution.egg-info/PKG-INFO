@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: amazon-ml-entity-resolution
+Version: 0.1.0
+Summary: Business Entity Resolution baseline for the Amazon ML Challenge
+Requires-Python: >=3.10
+Requires-Dist: pandas==2.3.3
+Requires-Dist: numpy==2.3.3
+Requires-Dist: scikit-learn==1.7.2
+Requires-Dist: scipy==1.16.2
+Requires-Dist: rapidfuzz==3.14.1
+Requires-Dist: joblib==1.5.2

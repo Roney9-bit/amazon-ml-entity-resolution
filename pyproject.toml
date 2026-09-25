@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amazon-ml-entity-resolution"
+version = "0.1.0"
+description = "Business Entity Resolution baseline for the Amazon ML Challenge"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas==2.3.3",
+  "numpy==2.3.3",
+  "scikit-learn==1.7.2",
+  "scipy==1.16.2",
+  "rapidfuzz==3.14.1",
+  "joblib==1.5.2",
+]
+
+[project.scripts]
+er-train = "business_entity_resolution.pipeline.train:main"
+er-predict = "business_entity_resolution.pipeline.predict:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

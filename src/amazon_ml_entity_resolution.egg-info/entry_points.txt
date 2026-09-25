@@ -1,0 +1,3 @@
+[console_scripts]
+er-predict = business_entity_resolution.pipeline.predict:main
+er-train = business_entity_resolution.pipeline.train:main
